@@ -5,3 +5,5 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn bot:app
     plan: free
+    environment:
+      pythonVersion: 3.12.3
